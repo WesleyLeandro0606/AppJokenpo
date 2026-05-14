@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp"
+    android:background="#1E1E2F"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="JOKENPÔ"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="20dp" />
+
+    <ImageView
+        android:id="@+id/imgApp"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:src="@drawable/padrao"
+        android:background="#2A2A40"
+        android:padding="20dp"
+        android:layout_marginBottom="20dp" />
+
+    <TextView
+        android:id="@+id/txtResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Escolha uma opção"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="30dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/imgPedra"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/pedra"
+            android:onClick="selecionadoPedra"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:background="#3B3B5B" />
+
+        <ImageView
+            android:id="@+id/imgPapel"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/papel"
+            android:onClick="selecionadoPapel"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:background="#3B3B5B" />
+
+        <ImageView
+            android:id="@+id/imgTesoura"
+            android:layout_width="120dp"
+            android:layout_height="90dp"
+            android:layout_margin="10dp"
+            android:background="#3B3B5B"
+            android:onClick="selecionadoTesoura"
+            android:padding="10dp"
+            android:src="@drawable/tesoura" />
+
+    </LinearLayout>
+
+</LinearLayout>
